@@ -1,0 +1,29 @@
+
+Provides an interface for encoding and decoding
+among character sets.
+
+    var Transcoder = require("transcode").Transcoder;
+    var Buffer = require("buffer").Buffer;
+    var transcoder = new Transcoder(sourceCharset, targetCharset)
+    var state = {
+        "source": new Buffer(10),
+        "target": new Buffer(10)
+    };
+    transcoder.transcode(state);
+
+The state object can be initialized with and may be updated to include:
+
+ - source: the source buffer
+ - target: the target buffer
+ - sourceStart: the read head, defaults to 0
+ - sourceStop: the read boundary, defaults to start.length
+ - targetStart: the write head, defaults to 0
+ - targetStop: the write boundary, defaults to target.length
+ - error: an error message, if one occurs, one of:
+    - "resize"
+    - "invalid"
+    - "incomplete"
+ - message: human readable form of the error
+ - nonReversible: an accumulator for non-reversible character
+   conversions
+

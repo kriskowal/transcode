@@ -1,0 +1,28 @@
+{
+    "name": "transcode",
+    "description": "character set encoders and decoders, built on libiconv",
+    "version": "0.0.0",
+    "homepage": "http://github.com/kriskowal/transcode/",
+    "author": "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal/)",
+    "bugs": {
+        "mail": "kris@cixar.com",
+        "web": "http://github.com/kriskowal/transcode/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/kriskowal/transcode/raw/master/LICENSE"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/kriskowal/transcode.git"
+    },
+    "engines": {
+        "node": ">=0.2.0"
+    },
+    "main": "lib/transcode.node",
+    "scripts": {
+        "preinstall": "make"
+    }
+}

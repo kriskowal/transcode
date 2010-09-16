@@ -1,0 +1,7 @@
+
+0.0.0
+
+ - forked out of the narwhal-node project
+ - significant changes to the Transcode API, favoring
+   all state in a single, updatable object
+
