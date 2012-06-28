@@ -1,5 +1,5 @@
 
-var SYS = require("sys");
+var SYS = require('util');
 var Buffer = require("buffer").Buffer;
 var Transcoder = require("transcode").Transcoder;
 var transcoder = new Transcoder("utf-8", "ascii");
